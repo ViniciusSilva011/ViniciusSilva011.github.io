@@ -326,7 +326,7 @@ ul#nav li.current a { color: #F06000; }
 }
 
 .laravel {
-  	width: 90%;
+  	width: 93%;
   	-moz-animation: laravel 2s ease;
   	-webkit-animation: laravel 2s ease;
 }
@@ -356,25 +356,25 @@ ul#nav li.current a { color: #F06000; }
   	-webkit-animation: jquery 2s ease;
 }
 .jscript {
-   width: 93%;
+   width: 96%;
    -moz-animation: jscript 2s ease;
    -webkit-animation: jscript 2s ease;
 }
 
 .linux {
-   width: 55%;
+   width: 85%;
    -moz-animation: linux 2s ease;
    -webkit-animation: linux 2s ease;
 }
 
 .typescript {
-   width: 78%;
+   width: 93%;
    -moz-animation: typescript 2s ease;
    -webkit-animation: typescript 2s ease;
 }
 
 .nodejs {
-   width: 79%;
+   width: 95%;
    -moz-animation: nodejs 2s ease;
    -webkit-animation: nodejs 2s ease;
 }
@@ -404,14 +404,14 @@ ul#nav li.current a { color: #F06000; }
 }
 
 .docker {
-   width: 45%;
+   width: 90%;
    -moz-animation: docker 2s ease;
    -webkit-animation: docker 2s ease;
 }
 /* mozzila */
 @-moz-keyframes laravel {
   0%   { width: 0px;  }
-  100% { width: 90%;  }
+  100% { width: 93%;  }
 }
 @-moz-keyframes vue {
   0%   { width: 0px;  }
@@ -432,7 +432,7 @@ ul#nav li.current a { color: #F06000; }
  
 @-moz-keyframes jscript {
    0%   { width: 0px;  }
-   100% { width: 93%;  }
+   100% { width: 96%;  }
  }
 
 @-moz-keyframes jquery {
@@ -442,17 +442,17 @@ ul#nav li.current a { color: #F06000; }
 
 @-moz-keyframes linux {
    0%   { width: 0px;  }
-   100% { width: 55%;  }
+   100% { width: 85%;  }
 }
 
 @-moz-keyframes typescript {
    0%   { width: 0px;  }
-   100% { width: 78%;  }
+   100% { width: 93%;  }
 }
 
 @-moz-keyframes nodejs {
    0%   { width: 0px;  }
-   100% { width: 79%;  }
+   100% { width: 95%;  }
 }
 
 @-moz-keyframes redis {
@@ -477,12 +477,12 @@ ul#nav li.current a { color: #F06000; }
 
 @-moz-keyframes docker {
    0%   { width: 0px;  }
-   100% { width: 45%;  }
+   100% { width: 90%;  }
 }
 /* chrome */
 @-webkit-keyframes laravel {
   0%   { width: 0px;  }
-  100% { width: 90%;  }
+  100% { width: 93%;  }
 }
 @-webkit-keyframes vue {
   0%   { width: 0px;  }
@@ -502,7 +502,7 @@ ul#nav li.current a { color: #F06000; }
 }
 @-webkit-keyframes jscript {
    0%   { width: 0px;  }
-   100% { width: 93%;  }
+   100% { width: 96%;  }
  }
 @-webkit-keyframes jquery {
   0%   { width: 0px;  }
@@ -511,17 +511,17 @@ ul#nav li.current a { color: #F06000; }
 
 @-webkit-keyframes linux {
    0%   { width: 0px;  }
-   100% { width: 55%;  }
+   100% { width: 85%;  }
 }
 
 @-webkit-keyframes typescript {
    0%   { width: 0px;  }
-   100% { width: 78%;  }
+   100% { width: 93%;  }
 }
 
 @-webkit-keyframes nodejs {
    0%   { width: 0px;  }
-   100% { width: 79%;  }
+   100% { width: 95%;  }
 }
 
 @-webkit-keyframes redis {
@@ -545,7 +545,7 @@ ul#nav li.current a { color: #F06000; }
 }
 @-webkit-keyframes docker {
    0%   { width: 0px;  }
-   100% { width: 45%;  }
+   100% { width: 90%;  }
 }
 /* ------------------------------------------------------------------ */
 /* e. Portfolio Section
