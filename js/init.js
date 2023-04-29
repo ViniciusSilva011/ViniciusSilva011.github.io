@@ -176,16 +176,17 @@
       return false;
    });
 
+   const showMoreAnchor = $('#showMore');
+   const theBasicsAnchor = $('#the-basics');
+   showMoreAnchor.on('click', function(e) {
+      e.preventDefault()
+      theBasicsAnchor.show();
+      showMoreAnchor.hide();
+   });
 
 });
-
 
 function readMore() {
    $("#read-more-button").hide();
    $("#read-more").show();
 }
-
-
-
-
-
