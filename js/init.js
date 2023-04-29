@@ -183,7 +183,6 @@
 function readMore() {
    $("#read-more-button").hide();
    $("#read-more").show();
-
 }
 
 
