@@ -305,73 +305,139 @@
                      </div>
                   </div>
                   <!---------------------------------------------------->
-                  <ul>
-                     <li>
-                        Internship Project
+                  <div style="margin-left: 20px;">
+                     <div style="margin-left: -20px; margin-bottom: -10px;">
+                        <b> Internship Project </b>
+                     </div>
+                     <ul>
+                        <li>It took 01/2020 ~ 3/2020</li>
+                        <li>It is an app designed to assist them in following internal procedures (Like Notion).</li>
+                        <li>It had permissions and roles for users to be only allowed to access their brands/department
+                           procedures.</li>
+                        <li>Technologies:
+                           <ul>
+                              <li>Laravel</li>
+                              <li>Vue.js</li>
+                              <li>MySQL</li>
+                           </ul>
+                        </li>
+                        <li>
+                           <a id="see-demo-anchor" target="_blank" href="#">See Demo</a>
+                        </li>
+                     </ul>
+                     <div style="margin-left: -20px; margin-bottom: -10px;">
+                        <b> Company Projects: </b>
+                     </div>
+
+                     <ul>
+                        <li>Data Sync System
+                           <ul>
+                              <li>It took 03/2020 ~ 12/2020</li>
+                              <li>It synchronizes the MySQL tables from our systems with the other MySQL instances
+                                 internal
+                                 brands (Boca do Lobo, Brabbu, ...)
+                              </li>
+                              <li>It has a dashboard where the client would monitor the data information being
+                                 written in real-time</li>
+                              <li>Technologies:
+                                 <ul>
+                                    <li>Docker Compose</li>
+                                    <li>MySQL</li>
+                                    <li>Apache Zookeeper</li>
+                                    <li>Apache Kafka
+                                       <ul>
+                                          <li>Debezium Connector MySQL (Source)</li>
+                                          <li>MySQL Connector Java (Sink)</li>
+                                       </ul>
+                                    </li>
+                                    <li>Laravel</li>
+                                    <li>Laravel Passport</li>
+                                    <li>Laravel Lumen</li>
+                                    <li>Vue.js</li>
+                                    <li>Node.js</li>
+                                    <li>Socket.io</li>
+                                    <li>Redis</li>
+                                    <li>Composer Package Manager</li>
+                                 </ul>
+                              </li>
+                        </li>
+                     </ul>
+                     <li>Stock Warehouse Management
                         <ul>
-                           <li>It is an app that would help them follow through internal procedures</li>
+                           <li>It took 03/2021 ~ 7/2021</li>
+                           <li>This project is used to maintain control of the capacity of the warehouse stocks</li>
+                           <li>It was implemented through the scan of the QR Code images of each product into the
+                              locations of the
+                              warehouse space</li>
+                           <li>It updated each status of the warehouse space and products in real-time
+                           </li>
                            <li>Technologies:
                               <ul>
+                                 <li>MySQL</li>
                                  <li>Laravel</li>
                                  <li>Vue.js</li>
-                                 <li>MySQL</li>
+                                 <li>Node.js</li>
+                                 <li>Redis</li>
+                                 <li>Socket.io</li>
                               </ul>
-                           </li>
-                           <li>
-                              <a id="see-demo-anchor" target="_blank" href="#">See Demo</a>
                            </li>
                         </ul>
                      </li>
-                  </ul>
-                  <ul>
-                     <li>
-                        It all started with the internship that I got into when I was about to finish the CET program.
-                        My internship project was about providing a user-friendly interface to manage and create
-                        processes for several internal procedures.
-                        In the beginning, I knew nothing about the company technologies and was through this project I
-                        learned Vue.js, Laravel, and MySQL.
-                        <i> <a target="_blank" href="https://youtu.be/D2GpvZzwGSg">Preview</a></i>
+                     <li>Salesforce Data Synchronization
+                        <ul>
+                           <li>It took 08/2021 ~ 11/2021</li>
+                           <li>
+                              This project is used to synchronize several MySQL tables into many salesforce
+                              objects
+                           </li>
+                        </ul>
+                        <ul>
+                           <li>Technologies:
+                              <ul>
+                                 <li>Java</li>
+                                 <li>Docker Compose</li>
+                                 <li>Apache Zookeeper</li>
+                                 <li>Apache Avro</li>
+                                 <li>Apache Camel (Salesforce Component) used as Sink</li>
+                                 <li>MySQL</li>
+                                 <li>Apache Kafka:
+                                    <ul>
+                                       <li>Debezium Connector SQL Server (Source)</li>
+                                       <li>The auth is SASL_SSL (Protocol SCRAM-SHA-256)</li>
+                                    </ul>
+                                 </li>
+                              </ul>
+                           </li>
+                        </ul>
                      </li>
-                     <li>
-                        I also worked on some tasks related to data that should update in real-time.
-                        For this case, the technologies that I used were mainly Socket.io and Redis.
-                        Some projects that I worked on were needed to maintain the users updated with each other,
-                        but there are mainly two projects that are exceptional.
-                        <br>
-                        The first one was about to send users notifications of their actions through the application
-                        system,
-                        seeing the two hundred people being notified through their actions was an interesting event to
-                        see.
-                        <br>
-                        The second one helped me to maintain the users updated about the stock of a warehouse when the
-                        products
-                        would leave or enter it.
+                     <li>Maintain Legacy Code
+                        <ul>
+                           <li>It is taking 02/2022 ~ today</li>
+                           <li>I built an API (front-end and back-end) to handle the legacy code and also to manage the
+                              paginate of
+                              long and complex MySQL queries</li>
+                           <li>I paginated almost all the front-end tables of the main project, reducing some Database
+                              queries from >9s
+                              to 300ms ~ 500ms
+                           </li>
+                           <li>I analyzed and refactored the pattern MVC to MVVM on many pages</li>
+                           <li>
+                              By utilizing Docker, I was able to significantly decrease the amount of time it took to
+                              deploy the main application on either a server or a local server. What would have taken a
+                              week now takes less than an hour.</li>
+                        </ul>
                      </li>
-                     <li>I also changed the architecture of some parts of their Laravel project from standard Laravel
-                        MVC to Vue.js MVVM.</li>
-                     <li>
-                        When it comes to the database, I always try to make the tables as normalized as I can.
-                        There is always the case when the normalization can't be applied to the existing tables, but
-                        in this case I can do nothing.
-                     </li>
-                     <!-- here -->
-                     <li>
-                        When I am doing a project I always try to let the pages be in the most responsive way possible,
-                        so they can be used on other devices.
-                        My designing skills are not cutting edge but I think I can get by on my own.
-                     </li>
-                     <li>
-                        Nowadays, besides deploying apps using docker and maintaining their website,
-                        I usually am doing tests to implement new features and thinking all the time about how to make
-                        my code as clean as possible for the rest of the team.
-                        <br>
-                     </li>
-                  </ul>
 
-                  </p>
-
+                     <!-- <i id="show-more-company-projects" style="margin-left: -20px;"> <a href="#">Show More</a></i> -->
+                     <div style="margin-left: -20px; margin-bottom: -10px;">
+                        <b> Others: </b>
+                     </div>
+                     <ul>
+                        <li>Implement HMR for all developers</li>
+                        <li>There are still a lot of work done...</li>
+                     </ul>
+                  </div>
                </div>
-
             </div> <!-- item end -->
 
             <!-- <div class="row item">
