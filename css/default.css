@@ -158,10 +158,10 @@ pre {
    word-wrap: break-word;
 }
 
-blockquote,
+/* blockquote,
 q {
    quotes: &#8220 &#8220;
-}
+} */
 
 blockquote:before,
 blockquote:after,
@@ -481,9 +481,9 @@ ol {
    margin-top: 12px;
 }
 
-ul {
+/* ul {
    list-style: none outside;
-}
+} */
 
 ol {
    list-style: decimal;
