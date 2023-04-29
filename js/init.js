@@ -176,14 +176,34 @@
       return false;
    });
 
-   const showMoreAnchor = $('#showMore');
+   // Get the modal element
+   const modal = document.querySelector('.modal');
+
+   // Get the button that opens the modal
+   const openModalBtn = document.querySelector('#see-demo-anchor');
+
+   // When the user clicks the button, open the modal
+   openModalBtn.addEventListener('click', (e) => {
+      e.preventDefault()
+      modal.style.display = 'block';
+      modal.classList.add('is-visible')
+   });
+   
+   // When the user clicks anywhere outside of the modal, close it
+   window.addEventListener('click', (event) => {
+      if (event.target == modal) {
+         modal.classList.remove('is-visible')
+         modal.style.display = undefined;
+      }
+   });
+
+   const showMoreAnchor = $('#show-more');
    const theBasicsAnchor = $('#the-basics');
    showMoreAnchor.on('click', function(e) {
       e.preventDefault()
       theBasicsAnchor.show();
       showMoreAnchor.hide();
    });
-
 });
 
 function readMore() {
