@@ -214,13 +214,14 @@
    //#endregion
    seeMoreCodeMaintenanceLink.on('click', (e) => {
       e.preventDefault();
+      $('#more-maintenance-code').show();
+      seeMoreCodeMaintenanceLink.hide();
    })
    openCodeMaintenanceDocumentationLink.on('click', async (e) => {
       e.preventDefault();
       const secret = await window.prompt('Secret')
       if (!secret) return;
       try {
-         
          const data = await $.post('https://edit.shopping-cart.floow.fun/v-auth', {token: secret});
          window.open(data.link, '_blank')
       } catch (error) {
