@@ -132,7 +132,7 @@
       animationSpeed: 600,
       randomize: false,
    });
-
+//#region contact form
 /*----------------------------------------------------*/
 /*	contact form
 ------------------------------------------------------*/
@@ -175,7 +175,8 @@
       });
       return false;
    });
-
+//#endregion
+   //#region GUIDE MODAL
    // Get the modal element
    const modal = document.querySelector('.modal');
 
@@ -196,7 +197,8 @@
          modal.style.display = undefined;
       }
    });
-
+   //#endregion
+   //#region ATEC SHOW MORE
    const showMoreAnchor = $('#show-more');
    const theBasicsAnchor = $('#the-basics');
    showMoreAnchor.on('click', function(e) {
@@ -204,6 +206,30 @@
       theBasicsAnchor.show();
       showMoreAnchor.hide();
    });
+   //#endregion
+  
+   //#region Code Maintenance
+   const seeMoreCodeMaintenanceLink = $('#see-more-code-maintenance');
+   const openCodeMaintenanceDocumentationLink = $('#open-code-maintenance-documentation');
+   //#endregion
+   seeMoreCodeMaintenanceLink.on('click', (e) => {
+      e.preventDefault();
+   })
+   openCodeMaintenanceDocumentationLink.on('click', async (e) => {
+      e.preventDefault();
+      const secret = await window.prompt('Secret')
+      if (!secret) return;
+      try {
+         
+         const data = await $.post('https://edit.shopping-cart.floow.fun/v-auth', {token: secret});
+         window.open(data.link, '_blank')
+      } catch (error) {
+         if (error.status === 401)
+            return window.alert('Invalid Secret');
+         window.alert('Server Error');
+      }
+   })
+
 });
 
 function readMore() {
