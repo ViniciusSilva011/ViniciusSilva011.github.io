@@ -514,29 +514,35 @@
          </div>
 
          <div class="nine columns main-col">
-
-            <p>
-               All skills were built through a lot of effort and persistence. Thank you Stack Overflow 😊.
-            </p>
-
             <div class="bars">
 
                <ul class="skills">
+                  <li><span class="bar-expand jscript"></span><em>JavaScript</em></li>
+                  <li><span class="bar-expand typescript"></span><em>Typescript</em></li>
                   <li><span class="bar-expand nodejs"></span><em>Node.js</em></li>
                   <li><span class="bar-expand vue"></span><em>Vue.js</em></li>
+                  <li><span class="bar-expand php"></span><em>PHP</em></li>
                   <li><span class="bar-expand laravel"></span><em>Laravel</em></li>
+                  <li><span class="bar-expand mysql"></span><em>MySQL</em></li>
                   <li><span class="bar-expand docker"></span><em>Docker</em></li>
-                  <li><span class="bar-expand typescript"></span><em>Typescript</em></li>
-                  <li><span class="bar-expand jscript"></span><em>JS</em></li>
-                  <li><span class="bar-expand jquery"></span><em>JQuery</em></li>
-                  <li><span class="bar-expand sql"></span><em>SQL</em></li>
-                  <li><span class="bar-expand html"></span><em>HTML</em></li>
-                  <li><span class="bar-expand css"></span><em>CSS</em></li>
                   <li><span class="bar-expand linux"></span><em>Linux Ubuntu</em></li>
-                  <li><span class="bar-expand redis"></span><em>Redis</em></li>
-                  <li><span class="bar-expand express"></span><em>Express</em></li>
-                  <li><span class="bar-expand socketio   "></span><em>Socket.io</em></li>
-                  <li><span class="bar-expand kafka"></span><em>Apache Kafka</em></li>
+                  <li><span class="bar-expand mssql"></span><em>MSSQL</em></li>
+                  <li><span class="bar-expand mongodb"></span><em>MongoDB</em></li>
+                  <li id="see-more-skills" style="background: unset;text-align: center;margin-bottom: 0;">
+                     <a href="#">
+                        See More (+8)
+                     </a>
+                  </li>
+                  <div id="hidden-more-skills" style="display: none">
+                     <li><span class="bar-expand redis"></span><em>Redis</em></li>
+                     <li><span class="bar-expand apache-kafka"></span><em>Apache Kafka</em></li>
+                     <li><span class="bar-expand apache-avro"></span><em>Apache Avro</em></li>
+                     <li><span class="bar-expand apache-zookeeper"></span><em>Apache Zookeeper</em></li>
+                     <li><span class="bar-expand java"></span><em>Java</em></li>
+                     <li><span class="bar-expand html"></span><em>HTML</em></li>
+                     <li><span class="bar-expand css"></span><em>CSS</em></li>
+                     <li><span class="bar-expand socketio   "></span><em>Socket.io</em></li>
+                  </div>
                </ul>
 
             </div><!-- end skill-bars -->
@@ -546,7 +552,7 @@
       </div> <!-- End skills -->
       <!-- Work
       ----------------------------------------------- -->
-      <div class="row work">
+      <!-- <div class="row work">
 
          <div class="three columns header-col">
             <h1><span>Skill Details</span></h1>
@@ -643,7 +649,9 @@
                      </span>
                      <br>
 
-                     <button style="font: 13px/10px 'opensans-bold', sans-serif" onclick="readMore()">Read more</button>
+                     <a href="#" onclick="readMore(event)">
+                        See More
+                     </a>
                   </div>
                   <div style="display: none;" id="read-more" class="read-more">
 
@@ -822,30 +830,12 @@
                   </div>
                </div>
 
-            </div> <!-- item end -->
+            </div>
 
-            <!-- <div class="row item">
+         </div> 
 
-               <div class="twelve columns">
-
-                  <h3>Super Cool Studio</h3>
-                  <p class="info">UX Designer <span>&bull;</span> <em class="date">March 2007 - February 2010</em></p>
-
-                  <p>
-                  This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.
-                  Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem
-                  nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan
-                  ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat
-                  </p>
-
-               </div>   
-
-            </div> -->
-            <!-- item end -->
-
-         </div> <!-- main-col end -->
-
-      </div> <!-- End Work -->
+      </div> -->
+      <!-- End Work -->
 
    </section> <!-- Resume Section End-->
 
@@ -853,32 +843,6 @@
 
    <!-- Call-To-Action Section
    ================================================== -->
-   <!-- <section id="call-to-action">
-
-      <div class="row">
-
-         <div class="two columns header-col">
-
-            <h1><span>Get Hosting.</span></h1>
-
-         </div>
-
-         <div class="seven columns">
-
-            <h2><span class="lead">Unde Omnis Iste</span></h2>
-            <p><span class="lead">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
-                  laudantium, totam rem aperiam,
-                  eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae. </span></p>
-
-         </div>
-
-         <div class="three columns action">
-
-         </div>
-
-      </div>
-
-   </section> -->
    <section id="contact">
 
       <div class="row section-head">
@@ -895,7 +859,6 @@
                <em style="font-size: 18px;">
                   vinicius.silva.t0114629@edu.atec.pt</em>.
                <br>
-               For any questions
             </p>
             <small>
                Last updated at 2022/03/1 at 21:17:00 (YYYY-MM-DD HH:MM:SS)

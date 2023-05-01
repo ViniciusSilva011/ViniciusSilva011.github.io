@@ -217,6 +217,14 @@
       $('#more-maintenance-code').show();
       seeMoreCodeMaintenanceLink.hide();
    })
+
+
+   const seeMoreSkills = $('#see-more-skills');
+   seeMoreSkills.on('click', (e) => {
+      e.preventDefault();
+      $('#hidden-more-skills').show();
+      seeMoreSkills.hide();
+   })
    openCodeMaintenanceDocumentationLink.on('click', async (e) => {
       e.preventDefault();
       const secret = await window.prompt('Secret')
@@ -233,7 +241,8 @@
 
 });
 
-function readMore() {
+function readMore(e) {
+   e.preventDefault()
    $("#read-more-button").hide();
    $("#read-more").show();
 }
